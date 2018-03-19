@@ -1,0 +1,20 @@
+table#special-table {
+	border: 1px solid black;
+	border-spacing: 15px;
+	background-color: #f1f1c1;
+}
+table#special-table tr:nth-child(even) {
+    background-color: #eee;
+    color: orange;
+}
+table#special-table tr:nth-child(odd) {
+    background-color: #fff;
+    color: powderblue;
+}
+table#special-table th {
+    color: white;
+    background-color: black;
+}
+div.default-table caption {
+	padding: 40px 100px 40px 50px;	
+}

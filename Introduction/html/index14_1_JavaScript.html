@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<h1>My First JavaScript</h1>
+	<p id="message"></p>
+
+	<ol>
+		<li type="1">
+			<h4>JavaScript can change HTML content</h4>
+			<p id="demo">The content is going to be changed</p>	
+			<button type="button"
+			onclick="document.getElementById('demo').innerHTML = Date()">
+				Click me to display Date and Time.
+			</button>
+		</li>
+		<li>
+			<h4>JavaScript can change HTML styles</h4>
+			<p id="styleDemo">The style is going to be changed</p>
+			<button type="button"
+			onclick="changeStyle()">
+				Press to change style
+			</button>
+		</li>
+		<li>
+			<h4>JavaScript can change the attributes</h4>
+			<img id="myImage" src="../img/pic_bulboff.gif" width="50" height="90">
+			<button type="button" onclick="changeLigth(1)">
+				Light On
+			</button>
+			<button type="button" onclick="changeLigth(0)">
+				Light Off
+			</button>
+		</li>
+	</ol>
+
+
+
+	<script type="text/javascript">
+		document.getElementById("message").innerHTML = "Hello JavaScript!";
+	</script>
+	<script type="text/javascript">
+		function changeStyle(){
+			document.getElementById("styleDemo").style.fontSize = "25px";
+			document.getElementById("styleDemo").style.color = "red";
+			document.getElementById("styleDemo").style.backgroundColor = "yellow";
+		}
+	</script>
+	<script type="text/javascript">
+		function changeLigth(lightMode){
+			var pic;
+			if(lightMode === 0){
+				pic = "../img/pic_bulboff.gif";
+			} else{
+				pic = "../img/pic_bulbon.gif";
+			}
+			document.getElementById("myImage").src = pic;
+		}
+	</script>
+</body>
+</html>

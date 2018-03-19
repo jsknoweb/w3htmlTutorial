@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Head Element</title>
+	<style type="text/css">
+		body {background-color: powerblue;}
+		h1 {color: red;}
+		p {color: blue;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../css/myStyle.css">
+	<script type="text/javascript">
+	  	function myFunction() {
+		    document.getElementById("myScript").innerHTML = "Hello JavaScript!";
+	  	}
+	</script>
+</head>
+<body>
+
+	<h1>Head Elements: Underline words are the tags used in the head</h1>
+
+	<ol>
+		<li>
+			<h4>This is a Heading with a defined <ins><em><strong>style</strong></em></ins></h1>
+			<p>The content of the body element is displayed in the browser window.</p>
+			<p>The content of the <ins><em><strong>title</strong></em></ins> element is displayed in the browser tab, in favorites and in search engine results.</p>
+		</li>
+		<li>
+			<h4 id="myHeading">External Style</h4>
+			<p id="myParagraph">This paragraoh recieved it style by a <ins><em><strong>link</strong></em></ins> to a extenal css file</p>
+		</li>
+		<li>
+			<h4><ins><em><strong>Script</strong></em></ins> Element</h4>
+			<p id="myScript">Any Paragraph</p>
+			<button type="button" onclick="myFunction()">Try it</button>
+		</li>
+	</ol>
+
+</body>
+</html>

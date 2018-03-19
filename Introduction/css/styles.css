@@ -1,0 +1,22 @@
+a {
+	color: violet;
+    font-family: verdana;
+    font-size: 300%;
+}
+div {
+	background-color: red;
+	text-align: center;
+	border: 1px solid brown;
+	padding: 30px;
+	margin: 50px;
+}
+#p01 {
+	color: yellow;
+}
+p.error {
+	color: red;
+}
+p#special {
+    background-color:black;
+    color:white;
+}

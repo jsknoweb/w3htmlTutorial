@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Introduction</title>
+</head>
+<body>
+
+	<p>This form will be submitted using the GET method:</p>
+
+	<form action="/whatever" target="_blank" method="GET">
+		<fieldset>
+			<legend>Personal Information</legend>
+				First Name<br/>
+				<input type="text" name="firstname"><br/>
+				Last Name<br/>
+				<input type="text" name="lastname"><br/>
+				Address<br/>
+				<input type="text" value="C/ Aire 18">
+				<hr>
+				Gender<br/>
+				<input type="radio" name="gender" value="male" checked="checked"> Male <br/>
+				<input type="radio" name="gender" value="female" > Female <br/>
+				<input type="radio" name="gender" value="other" > Other <br/>	
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend>Profesional Information</legend>
+				Company
+				<input type="text" name="company"><br/>
+				Position
+				<select name="position" size="3">
+					<option value="developer">Backend Developer</option>
+					<option value="developer">Frontend Developer</option>
+					<option value="teamleader" selected>Team Leader</option>
+					<option value="projectmanager">Project Manager</option>
+				</select>
+				<br/>
+				Skills
+				<select multiple>
+					<option value="java">Java</option>
+					<option value="javascript" selected>Javascript</option>
+					<option value="react" selected>React</option>
+					<option value="angular">Angular</option>
+					<option value="scrum">Scrum</option>
+					<option value="pmm">PMM</option>
+					<option value="coaching" selected>Coaching</option>
+					<option value="businessanalyst">Business Analyst</option>
+				</select>
+				<br/>
+				Projects Experience<br/>
+				<textarea name="experience" rows="10" cols="30">
+					Project1...
+					Project2...
+				</textarea>
+				<br/>
+				Projects Experience<br/>
+				<textarea name="experience2" style="width:200px; height:600px">
+					Project3...
+					Project4...
+				</textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Finally</legend>
+			  <input list="browsers">
+			  <datalist id="browsers">
+			    <option value="Internet Explorer">
+			    <option value="Firefox">
+			    <option value="Chrome">
+			    <option value="Opera">
+			    <option value="Safari">
+			  </datalist> 
+		</fieldset>
+		<br/>
+		<input type="submit" value="Submit">
+		<input type="button" name="cancel" value="Cancel">
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+	</form>
+
+	<p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+	<p>Notice that the value of the "Address" field will not be submitted, because the input element does not have a name attribute.</p>
+
+</body>
+</html>
